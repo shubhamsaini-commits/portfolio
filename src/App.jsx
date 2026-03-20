@@ -63,7 +63,7 @@ const DATA = {
   ],
   skills: [
     "REACT","PYTHON", "C/C++" , "HTML" , "CSS" , "JavaScript",
-    "GSAP", "TAILWIND", "NODE.JS", "FASTAPI", , "Google Cloud"
+    "GSAP", "TAILWIND", "FASTAPI", "Google Cloud"
   ],
   email: "shubham.saini.dev.cse@gmail.com", // ✏️ your email
   social: [
