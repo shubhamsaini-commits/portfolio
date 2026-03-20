@@ -1,0 +1,95 @@
+Role & Objective
+Act as an award-winning Frontend Developer and UI/UX Designer. Your task is to generate the complete, production-ready code for a premium, highly interactive personal portfolio website. The site must exude a "modern, sleek, and slightly brutalist/minimalist" aesthetic, utilizing advanced web animations to create an unforgettable user experience.
+
+Technical Stack
+
+Framework: React 
+Styling: Tailwind CSS for layout and utility classes.
+
+Animation Core: GSAP (GreenSock Animation Platform) - specifically using ScrollTrigger, Timeline, and TextPlugin.
+
+Smooth Scrolling: Lenis (Studio Freight) for a buttery-smooth scroll experience that enhances the GSAP triggers.
+
+Secondary Animation (UI interactions): Framer Motion (if using React) or custom CSS transitions for hover states and micro-interactions.
+
+Global Design System
+
+Theme: Dark mode default. Background: #0a0a0a. Primary Text: #f5f5f5. Accent Color: #ff4500 (Electric Orange) or #ccff00 (Neon Lime) for subtle highlights.
+
+Typography: Use 'Clash Display' or 'Syne' for massive, impactful headings. Use 'Inter' or 'Roobert' for clean, highly legible paragraph text.
+
+UI Elements: Use glassmorphism (translucent backgrounds with blur) for navigation and cards. Include a custom cursor (a small dot that expands into a larger, inverted circle when hovering over clickable elements).
+
+Architecture & Section Details (with Animation Specs)
+
+1. Loader & Initialization
+
+Visual: A stark black screen with a minimal percentage counter going from 0 to 100%.
+
+Animation (GSAP): Once loaded, the counter slides up, and the black overlay slices into panels (or shrinks into a circle) to reveal the Hero section.
+
+2. Hero Section
+
+Layout: Full viewport height (100vh). Massive, screen-filling typography stating the developer's name and role (e.g., "CREATIVE / DEVELOPER").
+
+Animation (GSAP):
+
+Use a staggered split-text reveal for the main heading (letters rising from an invisible mask).
+
+Parallax effect on the background subtle gradient or abstract shape tied to mouse movement.
+
+A "Scroll Down" indicator that loops a gentle vertical bounce.
+
+3. About Section
+
+Layout: A two-column grid. Left side sticky with a section title ("About Me"). Right side scrolls through paragraphs of text.
+
+Animation (GSAP ScrollTrigger):
+
+Pin the left column using ScrollTrigger.pin.
+
+As the user scrolls, use a text-highlight effect on the right paragraph: text starts at 20% opacity and scrubs to 100% opacity based on the scroll position.
+
+4. Featured Work (Projects) Section
+
+Layout: Horizontal scrolling section.
+
+Animation (GSAP ScrollTrigger):
+
+Pin the entire section container.
+
+Translate the project cards horizontally (x: -100%) tied to the vertical scroll progress (scrub: 1).
+
+Hover Interactions (CSS/Framer Motion): When hovering over a project card, the image scales up slightly (scale: 1.05) inside an overflow-hidden container, and the project title skews in.
+
+5. Skills/Tech Stack
+
+Layout: An infinite CSS/JS marquee of oversized text detailing technologies (e.g., "REACT -html - css - js python  - GSAP - TAILWIND - NODE").
+
+Animation:
+
+Continuous linear translation.
+
+On hover, the marquee slows down and the hovered technology changes to the accent color.
+
+Direction of the marquee reverses depending on scroll direction (using ScrollTrigger velocity).
+
+6. Contact/Footer Section
+
+Layout: Massive "LET'S TALK" text and social links.
+
+Animation (GSAP):
+
+Footer reveal effect: The footer sits at a lower z-index and "uncovers" as the user scrolls past the previous section (curtain reveal).
+
+Include a "Magnetic Button" for the email link (the button physically pulls toward the user's cursor when within a 50px radius).
+
+Code Generation Rules:
+
+Ensure all GSAP animations are wrapped in cleanup functions (like gsap.context() or React's useGSAP hook) to prevent memory leaks.
+
+Provide the necessary CDN links or npm install commands for GSAP, ScrollTrigger, and Lenis.
+
+Write semantic HTML and ensure the site is fully responsive (animations should scale down or disable gracefully on mobile).
+
+Comment the code thoroughly, explaining where to insert my own text, images, and links.
