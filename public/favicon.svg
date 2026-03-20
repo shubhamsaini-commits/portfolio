@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" width="200" height="90">
+  <!-- Dark background -->
+  <rect width="200" height="90" rx="8" fill="#111111"/>
+ 
+  <!-- <s.s/> text - bold italic condensed to match original -->
+  <text
+    x="100"
+    y="62"
+    font-family="'Arial Narrow', 'Franklin Gothic Medium Cond', 'Impact', Arial, sans-serif"
+    font-size="40"
+    font-weight="900"
+    font-style="italic"
+    fill="#CCFF00"
+    text-anchor="middle"
+    letter-spacing="-1"
+  >&lt;s.s/&gt;</text>
+</svg>
