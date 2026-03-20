@@ -1000,7 +1000,7 @@ function Contact() {
 
       <div className="footer-bar">
         <span className="footer-copy">
-          © 2025 {DATA.name} {DATA.surname}. Designed &amp; built with obsession.
+          © 2025 SHUBHAM {DATA.surname}. Designed &amp; built with obsession.
         </span>
         <a className="footer-top" href="#hero">↑ Back to top</a>
       </div>
